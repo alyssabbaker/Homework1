@@ -12,16 +12,17 @@ namespace Loops1
         {
             double examScores=0;
             double average = 0;
-            double sum=0;
+            double sum = 0;
 
             for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine("Please enter your exam score: ");
-                sum =sum+examScores;
+                examScores = Convert.ToDouble(Console.ReadLine());
+                sum = examScores + sum;
+                average = sum / 3;
             }
-
-            average = sum / 3;
-            Console.WriteLine($"Your average exam score is: {average:P}");
+            
+            Console.WriteLine($"Your average exam score is: {average}%");
             Console.Read();
             
         }

@@ -39,7 +39,7 @@ namespace Conditionals
             {
                 Console.WriteLine($"Amount before markup: {total:C}.");
                 Console.WriteLine($"Markup amount: {markup:C}");
-                Console.WriteLine($"Salestax: {salesTax}.");
+                Console.WriteLine($"Salestax: {salesTax:C}.");
                 Console.WriteLine($"The total of {cogs} cogs and {gears} gears is {totalPrice:C}.");
             }
           
